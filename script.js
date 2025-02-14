@@ -14,13 +14,11 @@ const getSum = () => {
     totalPrice += parseFloat(price.textContent); // Convert text content to float
   });
 
-  // Create a new row to display the total
   const table = document.getElementById('grocery-table');
-  const totalRow = document.createElement('tr'); // Create a new row
+  const totalRow = document.createElement('tr'); 
 
-  // Create a single cell for the total price
   const totalCell = document.createElement('td');
-  totalCell.colSpan = 2; // Make the cell span across both columns (item and price)
+  totalCell.colSpan = 2; 
   totalCell.textContent = `Total Price: Rs ${totalPrice.toFixed(2)}`; // Display the total price
   
   totalRow.appendChild(totalCell);
